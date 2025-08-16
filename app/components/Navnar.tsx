@@ -31,7 +31,8 @@ export default function Navbar() {
       <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
         <Link href="/" style={{ color: 'white', textDecoration: 'none', fontWeight: '500' }}>Home</Link>
         <Link href="/products" style={{ color: 'white', textDecoration: 'none', fontWeight: '500' }}>Products</Link>
-        <Link href="/about" style={{ color: 'white', textDecoration: 'none', fontWeight: '500' }}>About</Link>
+        {/* <Link href="/about" style={{ color: 'white', textDecoration: 'none', fontWeight: '500' }}>About</Link> */}
+        <Link href="/about" style={{ color: 'white', textDecoration: 'none', fontWeight: '500' }}>About</Link>  
         <Link href="/contact" style={{ color: 'white', textDecoration: 'none', fontWeight: '500' }}>Contact</Link>
       </div>
     </nav>

@@ -17,6 +17,8 @@
 
 // export default page
 
+
+
 import Navbar from './components/Navnar'
 import Footer from './components/Footer'
 
@@ -200,3 +202,6 @@ export default function HomePage() {
     </main>
   )
 }
+
+
+
