@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8fafc;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0e7ff 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 1rem;
+}
+
+.hero-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #1e40af;
+  margin-bottom: 0.5rem;
+  animation: fadeInDown 1s;
+  text-align: center;
+}
+
+.hero-desc {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1.3s;
+  text-align: center;
+}
+
+.brand-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.brand-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(30,64,175,0.10);
+  padding: 1.2rem 1rem;
+  text-align: center;
+  min-width: 120px;
+  animation: float 2s infinite alternate;
+  margin-bottom: 1rem;
+}
+
+.brand-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.brand-card .brand-name {
+  font-weight: bold;
+}
+
+.emoji-row {
+  font-size: 2rem;
+  animation: bounce 1.5s infinite;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.info-section {
+  background: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(30,64,175,0.08);
+}
+
+.info-title {
+  color: #7c3aed;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.info-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  background: #f0f9ff;
+  border-radius: 12px;
+  padding: 1rem;
+  min-width: 160px;
+  box-shadow: 0 2px 8px rgba(30,64,175,0.05);
+  margin-bottom: 1rem;
+}
+
+.info-card span {
+  font-size: 1.5rem;
+}
+
+.info-card .info-name {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.info-card .info-desc {
+  color: #444;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+@keyframes float {
+  from { transform: translateY(0);}
+  to { transform: translateY(-18px);}
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(-18px);}
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  .brand-row {
+    gap: 0.5rem;
+  }
+  .brand-card {
+    min-width: 100px;
+    padding: 1rem 0.5rem;
+  }
+  .info-row {
+    gap: 0.5rem;
+  }
+  .info-card {
+    min-width: 120px;
+    padding: 0.7rem;
+  }
+}
