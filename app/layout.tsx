@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import './styles/main.css'
 
 import Footer from "./components/Footer";
 
@@ -26,6 +27,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="" />
+        <link rel="preconnect" href="https://www.fortunefoods.com" crossOrigin="" />
+        <link rel="preconnect" href="https://5.imimg.com" crossOrigin="" />
+        <link rel="preconnect" href="https://www.patanjaliayurved.net" crossOrigin="" />
+        <link rel="preconnect" href="https://www.bigbasket.com" crossOrigin="" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+        <link rel="dns-prefetch" href="https://www.fortunefoods.com" />
+        <link rel="dns-prefetch" href="https://5.imimg.com" />
+        <link rel="dns-prefetch" href="https://www.patanjaliayurved.net" />
+        <link rel="dns-prefetch" href="https://www.bigbasket.com" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

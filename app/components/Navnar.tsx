@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import './Navnar.css';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,10 +19,10 @@ const Navbar = () => {
         <span className="navbar-hamburger">&#9776;</span>
       </button>
       <ul className={`navbar-links ${menuOpen ? 'active' : ''}`}>
-        <li><a href="/">Home</a></li>
-        <li><a href="/products">Product</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><Link href="/">Home</Link></li>
+        <li><Link href="/products">Product</Link></li>
+        <li><Link href="/about">About</Link></li>
+        <li><Link href="/contact">Contact</Link></li>
       </ul>
     </nav>
   );

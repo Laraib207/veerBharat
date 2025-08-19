@@ -1,5 +1,5 @@
 import Navnar from '../components/Navnar'
-import ProductsGrid from '../components/ProductsGrid'
+import ProductsGrid from './ProductsGridClient'
 import Footer from '../components/Footer'
 
 export default function ProductsPage() {

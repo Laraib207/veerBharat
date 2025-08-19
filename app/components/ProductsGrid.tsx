@@ -6,6 +6,8 @@ type Product = {
   description: string;
 };
 
+import Image from 'next/image'
+
 const products: Product[] = [
   {
     id: 1,
@@ -44,9 +46,12 @@ function ProductCard({ product }: { product: Product }) {
       flexDirection: 'column',
       alignItems: 'center'
     }}>
-      <img
+      <Image
         src={product.image}
         alt={product.name}
+        width={220}
+        height={120}
+        sizes="(max-width: 600px) 100vw, 220px"
         style={{
           width: '100%',
           height: '120px',

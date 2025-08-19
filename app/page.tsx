@@ -18,9 +18,9 @@
 // export default page
 
 
-import './styles/main.css'
 import Navbar from './components/Navnar'
 import Footer from './components/Footer'
+import Image from 'next/image'
 
 export default function HomePage() {
   return (
@@ -36,24 +36,33 @@ export default function HomePage() {
         </p>
         {/* Animated Grocery Brands */}
         <div className="brand-row">
-          <div className="brand-card" style={{ animationDelay: '0s' }}>
-            <img
+          <div className="brand-card" style={{ animationDelay: '0s', contain: 'content' }}>
+            <Image
               src="https://www.fortunefoods.com/images/oil/FortuneSunliteRefinedSunflowerOil.png"
               alt="Fortune Oil"
+              width={50}
+              height={50}
+              sizes="50px"
             />
             <div className="brand-name" style={{ color: '#dc2626' }}>Fortune Oil</div>
           </div>
-          <div className="brand-card" style={{ animationDelay: '0.2s' }}>
-            <img
+          <div className="brand-card" style={{ animationDelay: '0.2s', contain: 'content' }}>
+            <Image
               src="https://5.imimg.com/data5/SELLER/Default/2023/8/336280323/YE/HA/HP/13335273/saffola-gold-oil-500x500.png"
               alt="Saffola Oil"
+              width={50}
+              height={50}
+              sizes="50px"
             />
             <div className="brand-name" style={{ color: '#f59e42' }}>Saffola Gold</div>
           </div>
-          <div className="brand-card" style={{ animationDelay: '0.4s' }}>
-            <img
+          <div className="brand-card" style={{ animationDelay: '0.4s', contain: 'content' }}>
+            <Image
               src="https://www.patanjaliayurved.net/assets/product_images/large/Mustard-Oil-1ltr.png"
               alt="Patanjali Mustard Oil"
+              width={50}
+              height={50}
+              sizes="50px"
             />
             <div className="brand-name" style={{ color: '#1e40af' }}>Patanjali Mustard</div>
           </div>

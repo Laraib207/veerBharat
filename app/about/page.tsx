@@ -1,5 +1,6 @@
 import Navbar from '../components/Navnar'
 import Footer from '../components/Footer'
+import Image from 'next/image'
 
 const products = [
   {
@@ -81,9 +82,12 @@ export default function AboutPage() {
               cursor: 'pointer',
               animation: `fadeIn 0.8s ${idx * 0.15}s both`
             }}>
-              <img
+              <Image
                 src={product.image}
                 alt={product.name}
+                width={100}
+                height={100}
+                sizes="100px"
                 style={{
                   width: '100px',
                   height: '100px',
@@ -116,7 +120,7 @@ export default function AboutPage() {
             from { opacity: 0; transform: scale(0.8);}
             to { opacity: 1; transform: scale(1);}
           }
-          div:hover {
+          section > div > div:hover {
             transform: scale(1.05);
             box-shadow: 0 8px 32px rgba(124,48,237,0.18);
           }
