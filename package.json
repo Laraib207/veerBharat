@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "analyze": "ANALYZE=true next build",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -11,14 +12,15 @@
   "dependencies": {
     "next": "15.4.6",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "react-icons": "^5.5.0"
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^15.4.7",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "critters": "^0.0.23",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

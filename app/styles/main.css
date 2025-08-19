@@ -7,6 +7,8 @@ body {
 main {
   width: 100%;
   min-height: 100vh;
+  content-visibility: auto;
+  contain-intrinsic-size: 1000px;
 }
 
 .hero-section {
@@ -53,7 +55,8 @@ main {
   padding: 1.2rem 1rem;
   text-align: center;
   min-width: 120px;
-  animation: float 2s infinite alternate;
+  animation: float 3s ease-in-out infinite alternate;
+  will-change: transform;
   margin-bottom: 1rem;
 }
 
@@ -70,7 +73,8 @@ main {
 
 .emoji-row {
   font-size: 2rem;
-  animation: bounce 1.5s infinite;
+  animation: bounce 2s ease-in-out infinite;
+  will-change: transform;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -157,5 +161,13 @@ main {
   .info-card {
     min-width: 120px;
     padding: 0.7rem;
+  }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
   }
 }

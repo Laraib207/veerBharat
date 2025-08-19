@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer style={{
       width: '100%',
-      position: 'fixed',
+      position: 'sticky',
       left: 0,
       bottom: 0,
       background: 'linear-gradient(90deg, #1e40af 0%, #7c3aed 50%, #dc2626 100%)',
